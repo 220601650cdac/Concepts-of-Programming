@@ -57,7 +57,83 @@ class Father extends Grandfather
 	 display_land()
    }
 }
+-----------------------------------------------------------
+Python sample code that demonstrates Inheritance concept
+-----------------------------------------------------------
+class Grandfather:
+    def __init__(self,land) -> None:
+       self.land= land 
+    
+    def displayLand(self):
+        print("Grandfather has acres of " , self.land)
 
+class Father(Grandfather):
+   def __init__(self,land,shares) -> None:
+      super().__init__(land)
+      self.shares = shares
+  
+   def displayShares(self):
+    print("Father's shares are ", self.shares)
+   
+   def displayCurrentAssets(self):
+     self.displayShares()
+     self.displayLand()
+
+myFatherObject = Father(100,1000000)
+myFatherObject.displayCurrentAssets()
+
+
+--------------------------------------------------
+Java sample code demonstrating Inheritance concept
+--------------------------------------------------
+
+package com.yahoo;
+
+ class Grandfather {
+    int land; // member attribute
+
+    // constructor
+    public Grandfather(int land) {
+        this.land = land;
+    }
+
+    void displayLand()
+    {
+        System.out.println("Grandfather has acres of " + this.land);
+    }
+}
+
+public class Father extends Grandfather
+{
+    int shares; // member attribute
+
+    // constructor
+    public Father(int land, int shares) {
+        super(land);
+        this.shares = shares;
+    }
+
+    void displayShares()
+    {
+        System.out.println("Father's shares are " + this.shares);
+    }
+
+    void displayCurrentAssets()
+    {
+        this.displayShares();
+        this.displayLand();
+    }
+
+    // main function
+    public static void main(String[] args) {
+        Father myFatherObject = new Father(100,1000000);
+        myFatherObject.displayCurrentAssets();
+    }
+}
+
+
+-------------------------------------------------
+-------------------------------------------------
 ------
 Class Employee 
 {
