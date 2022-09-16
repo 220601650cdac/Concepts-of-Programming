@@ -1,0 +1,131 @@
+objects 
+--------------
+a) book
+  <takes/gives back>
+b) member
+
+
+Class Book
+{
+ bookName
+ bookPrice
+ 
+}
+
+Class Member
+{
+	memberName
+	membershipStatus
+	bookstaken  Book
+   
+    int takes() // method
+	{
+		// some code 
+	}
+	int returnsBook() // method 
+	{
+	 // some code
+	}
+}
+
+Inheritance
+---------------------
+grandfather (land , display_land())   ---> class
+father (shares) + land -> class
+child () shares (father) land(grandfather) -- class
+
+
+Class Grandfather 
+{
+	protected int land = 100;
+	
+	void display_land()
+	{
+		print land;
+	}
+	
+}
+
+class Father extends Grandfather
+{
+   int shares = 100000;
+   
+   void dispay_assets()
+   {
+     print "hey how are ou "
+	 print shares 
+	 display_land()
+   }
+}
+
+------
+Class Employee 
+{
+  name
+  rollno
+  
+  display(name)
+   print name
+   
+  display(rollno)
+	print rollno
+}
+
+
+
+empObj = new Employee("Gaurav")
+empObj1 = new Employee("Ritesh")
+
+empObj.display(rollno)
+---------------------------
+
+
+This PC->(Right Click) Properties ->Advanced System Seetings -> Env, Var. -> Set Path in Both Users as well as System variables
+
+path variable change 
+
+cmd - > java -version
+------------------
+
+example classes
+
+package com.cdac;
+
+public class Employee {
+    private int salary = 1000;
+    public String name = "Gaurav";
+    String organisation_name = "Cdac";
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    public void displayName()
+    {
+        System.out.println(name);
+    }
+
+}
+
+-------------------------
+Assignment :
+-----------------------------------
+Create a class named Cop
+private member attributes --> instructorName,noOfAttendes
+public member methods --> getInstructorName,getNoOfAttendes(),setNoOfAttendes()
+
+Create a class named ExecuteMain with a function static main() with following lines
+
+day01 = new Cop("Gaurav",100)
+"The name of the instructor is " + day01.getInstructorName()
+day01.setNoOfAttendes(1000)
+"The total no of attendes today were" + day01.getNoOfAttendes()
+
+-------------------------------------
+
+
+
