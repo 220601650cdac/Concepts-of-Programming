@@ -12,6 +12,9 @@ a) Variables in Java
 b) Literals in Java
 c) Datatypes (Primitive)
 d) Write main() programs using the information so far 
+e) Typecasting
+f) Operators in Java 
+g) Write main() programs using the information so far 
 
 
 Student : --> Enroll Java course , unenroll the course 
@@ -75,3 +78,75 @@ public class Student {
   
 -------------------
 -------------------
+
+/*Typecasting example*/
+package com.cdac;
+
+public class JavaProgram {
+    /* A Java Program Begins with a call to main()
+    * */
+    public static void main(String args[])
+    {
+       String test = "";
+       // 1.2f * 5
+        int firstVar = 1;
+        int secondVar = 5 ;
+
+        int spaceAscii = 95;
+        //double result =   (double) firstVar * (double) secondVar;
+        char result = (char) spaceAscii ;
+        System.out.println(result);
+    }
+
+}
+
+package com.cdac;
+
+public class JavaProgram {
+    /* A Java Program Begins with a call to main()
+    * */
+    public static void main(String args[])
+    {
+       String invalidTest = "Hello";
+       String validTest = "10";
+
+       //int invalidResult = Integer.valueOf(invalidTest);
+       int validResult = Integer.valueOf(validTest);
+
+       //System.out.println("Invalid result is " + invalidResult);
+       System.out.println("Valid result is " + validResult);
+    }
+
+}
+
+/* sample bitwise operator */
+package com.cdac;
+
+public class JavaProgram {
+    /* A Java Program Begins with a call to main()
+    * */
+    public static void main(String args[])
+    {
+       int firstValue = 0b1001;  // 9
+       int secondValue = 0b1; // 1
+
+       int result= firstValue+secondValue; // 10  binary format ( 00000000000000000000000000001010)
+       /*
+       System.out.println("Result  " + Integer.toBinaryString(result).length());
+       System.out.println("Result after operation " + Integer.toBinaryString(~result));
+        */
+
+       System.out.println("Result  " + Integer.toBinaryString(result));
+       System.out.println("Result after operation " + Integer.toBinaryString(~result<<2));
+
+    }
+
+}
+
+
+
+
+
+
+
+
