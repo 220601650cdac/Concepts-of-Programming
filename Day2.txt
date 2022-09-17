@@ -145,6 +145,46 @@ public class JavaProgram {
 
 
 
+------------------------
+------------------------
+Lets write a main program 
+	a) Hardcode integer 15 and perform following actions on it and display result
+	  (i)  add number 10 using assignment operator +=
+	  (ii) try left shifting it by 1 digit
+	  (iii)divide the number by 2 
+	  
+	b) Hardcode String "Hello People" and perform following actions on it and display result
+	  (i) Concat string "from india"
+	  (ii) check how many 'l's are there in the hardcoded string // pending 
+	  (iii) return true or false if string "ple" is present in the hardcoded string
+	
+------------------------------
+------------------------------
+
+package com.cdac;
+
+public class JavaProgram {
+    /* A Java Program Begins with a call to main()
+    * */
+    public static void main(String args[])
+    {
+        int hardcode = 15 ;
+        hardcode += 10;
+        System.out.println(hardcode); // 25
+        System.out.println(hardcode<<1); // 50
+        System.out.println(hardcode/2); // 12
+
+        String hardcodeStr = "Hello People";
+        System.out.println(hardcodeStr.concat(" from india")); // "Hello People from india"
+        // check how many 'l's are there in the hardcoded string ?????
+        //System.out.println(hardcodeStr.indexOf("l",4));
+        System.out.println(hardcodeStr.contains("ple")); // true
+    }
+}
+
+--------------------
+--------------------
+
 
 
 
