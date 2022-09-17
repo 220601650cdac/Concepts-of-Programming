@@ -1,0 +1,77 @@
+Key Takeaways from Yesterday's session:
+-----------------------------------------
+a) Understanding what is programming all about 
+b) Category of programming languages available
+c) Have a Java environment on your system + IDE
+d) Introduction to JAVA as a language
+e) Understand the main() function 
+
+Today's Agenda:
+-------------------------------------------
+a) Variables in Java
+b) Literals in Java
+c) Datatypes (Primitive)
+d) Write main() programs using the information so far 
+
+
+Student : --> Enroll Java course , unenroll the course 
+
+1) Indentify Classes 
+2) Attributes of those classes (something that describe more about the class )
+3) Methods on the indentfied attributes (Behaviours)
+
+package com.cdac;
+public class Student {
+
+    // attributes
+    String name;
+    int rollno;
+    String enrolledCourse;
+
+
+        // methods
+        //when enrolled this field <"enrolledCourse"> will be set
+        //when enrolled this field <"enrolledCourse"> will be unset
+
+    public void enrollForCourse(String rcvEnrolledCourse)
+    {
+        this.enrolledCourse = rcvEnrolledCourse;
+    }
+
+    public void getEnrolledCourse()
+    {
+        System.out.println(this.enrolledCourse);
+    }
+
+    public void unenrollForCourse()
+    {
+        this.enrolledCourse = "";
+    }
+
+    // main
+    public static void main(String[] args)
+    {
+        Student studentObject = new Student();
+
+        // enroll the student
+        studentObject.enrollForCourse("Java");
+        studentObject.getEnrolledCourse();
+
+        // unenroll the student
+        studentObject.unenrollForCourse();
+        studentObject.getEnrolledCourse();
+    }
+}
+
+------------------
+------------------
+1) Create a main function 
+
+	a) that adds two number (ex. 4+5)
+	b) Hardcode two variables with string literals "Hello" and "world" and print print concatenated 
+	  string literals to the console 
+	c) Substract two float variable (ex. 1.3 - 0.3)
+	d) multiply one float variable value with one integer variable value (ex: 1.2f * 5)
+  
+-------------------
+-------------------
