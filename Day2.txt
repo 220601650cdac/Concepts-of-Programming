@@ -16,6 +16,9 @@ e) Typecasting
 f) Operators in Java 
 g) Write main() programs using the information so far 
 
+-----------------------------------------------------
+Example Java student class 
+-----------------------------------------------------
 
 Student : --> Enroll Java course , unenroll the course 
 
@@ -118,8 +121,9 @@ public class JavaProgram {
     }
 
 }
-
+-----------------------------------------------------
 /* sample bitwise operator */
+-----------------------------------------------------
 package com.cdac;
 
 public class JavaProgram {
@@ -159,6 +163,8 @@ Lets write a main program
 	  (iii) return true or false if string "ple" is present in the hardcoded string
 	
 ------------------------------
+------------------------------
+Solution to above problem 
 ------------------------------
 
 package com.cdac;
