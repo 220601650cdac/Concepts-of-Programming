@@ -80,5 +80,69 @@ public class Conditional {
     }
 }
 
+-----------------------------
+-----------------------------
+Write a program for cdac passing which does the following:
+
+1) Harcode marks variable to 100: 
+2) Harcode marks variable to  34:
+3) Harcode marks variable to  45:
+4) Harcode marks variable to  65:
+5) Harcode marks variable to  88:
+6) Harcode marks variable to  108:
+
+
+if marks secured is < 40 then print "Failed , please take a retest"
+if marks secured is >= 40 and less than 60 "First class"
+if marks secured is >= 60 and less than 80 "Distinction"
+if marks secured is >= 80 and less than 101 "Woah,you are Superhuman"
+if nothing matches then print "Incorrect Input"
+------------------------------
+-----------------------------
+if marksSecured < 40 : Failed , please take a retest
+if marksSecured >= 40 &&  marksSecured < 60 :  "First class"
+if marksSecured >= 60 &&  marksSecured < 80 "Distinction"
+if marksSecured >= 80 &&  marksSecured < 101 "Woah,you are Superhuman"
+else nothing matches then print "Incorrect Input"
+
+-- correct solution
+if marksSecured <= 40 : Failed , please take a retest| -infinity-40
+if marksSecured <= 60  :  "First class"              |    40- 60
+if marksSecured <= 80 :"Distinction"                 |    60-80
+if marksSecured <= 101 :"Woah,you are Superhuman"    |    80-101
+else "Incorrect Input"
+
+-- incorrect 
+if marksSecured < 101 : "Woah,you are Superhuman"
+if marksSecured < 80  : "Distinction"
+if marksSecured < 60 :  "First class"
+if marksSecured  < 40  :  "Woah,you are Superhuman"
+else "Incorrect Input"
+
+--- Java solution
+package com.cdac;
+public class Conditional {
+    public static void main(String[] args) {
+        int marksSecured =  101 ;
+    // correct solution
+    if (marksSecured <= 40){ // -infinity-40
+        System.out.println("Failed, please take a retest");
+    }
+    else if (marksSecured <= 60) {  //    40- 60
+        System.out.println("First class");
+    }
+    else if (marksSecured <= 80) {                //    60-80
+        System.out.println("Distinction" );
+    }
+    else if(marksSecured <= 101) {     //    80-101
+        System.out.println("Woah,you are Superhuman");
+    }
+    else {
+        System.out.println("Incorrect Input");
+    }
+  }
+}
+
+
 
 
