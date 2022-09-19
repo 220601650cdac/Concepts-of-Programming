@@ -177,4 +177,134 @@ public class Conditional {
     }
 }
 
+-----------------------------
+-----------------------------
+Temperature : 
+If the temperature : 30 :  We are in a normal environment 
+If the temperature : 40 :  We are in a hot environment 
+If the temperature : -10 : We are in a cold environment 
+If the temperature : -35 : We are in a Supercool environment
+anything else : Sorry wrong input 
+------------------------------
+------------------------------
+
+switch (expr)
+{
+  case value1:
+	 // block1
+	 :
+	 :
+  caseN valueN:
+	 // blockN
+  default :
+     // default block  
+}
+
+
+-------- Java program
+package com.cdac;
+
+class Main {
+    public static void main(String[] args) {
+        int Temperature = -35090 ;
+        switch (Temperature)
+        {
+            case 30: System.out.println("We are in a normal environment"); break;
+            case 40 : System.out.println("We are in a hot environment"); break;
+            case -10 : System.out.println("We are in a cold environment"); break;
+            case -35 : System.out.println("We are in a Supercool environment"); break;
+            default : System.out.println("Sorry wrong input");
+        }
+        System.out.println("Thank you !!!");
+    }
+}
+
+
+
+-- using if else if
+package com.cdac;
+
+class Main {
+    public static void main(String[] args) {
+        int Temperature = -35;
+        if (Temperature == 30) {
+            System.out.println("We are in a normal environment");
+        } else if (Temperature == 40) {
+            System.out.println("We are in a hot environment");
+        } else if (Temperature == -10) {
+            System.out.println("We are in a cold environment");
+        } else if (Temperature == -35) {
+            System.out.println("We are in a Supercool environment");
+        } else {
+            System.out.println("Sorry wrong input");
+        }
+
+        System.out.println("Thank you !!!");
+    }
+}
+
+-----------------------------
+--------------- Loops-----------------------------
+-----------------------------
+
+package com.cdac;
+
+class Main {
+    public static void main(String[] args) {
+
+        help:
+        for(int outsideVar=1;outsideVar<=2;outsideVar++) {
+           for(int insideVar=1;insideVar<=3000;insideVar++)
+           {
+               System.out.println("outsideVar:" + outsideVar +" insideVar:"+insideVar);
+               if (insideVar == 1000) {
+                   break help;
+               }
+           }
+
+        }
+
+
+
+
+
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        for (int k = 0 ; k <=1 ; k++)
+            {
+                help:
+                for(int outsideVar=3;outsideVar<=4;outsideVar++) {
+                for (int insideVar = 1; insideVar <= 3000; insideVar++) {
+                    System.out.println("outsideVar:" + outsideVar + " insideVar:" + insideVar);
+                    if (insideVar == 10) {
+                        break help;
+                    }
+                }
+            }
+
+            }
+
+
+
+comtinue
+package com.cdac;
+
+class Main {
+    public static void main(String[] args) {
+
+        for (int insideVar = 1; insideVar <= 10; insideVar++) {
+            if (insideVar> 4 && insideVar < 9 )
+            {
+                System.out.println("I skipped for "+ insideVar);
+                continue;
+            }
+            System.out.println(insideVar);
+        }
+
+            }
+    }
 
