@@ -308,3 +308,14 @@ class Main {
             }
     }
 
+
+--- Assignment ----
+Write a program to accept a number and print all factors excluding the number (using loops). Implement code in factors() function. void factors(int n); Input: 24 Output: all factors: 1, 2, 3, 4, 6, 8, 12
+
+Write a program to display n terms of Fibonacci series Input: 6 Output: 1, 1, 2, 3, 5, 8
+
+Using For loop & While loop Write a program to display n terms of Fibonacci series Input: 6 Output: 1, 1, 2, 3, 5, 8
+
+--- Assignment ----
+
+
