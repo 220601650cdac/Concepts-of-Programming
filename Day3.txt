@@ -1,0 +1,84 @@
+Today Agenda
+-----------------
+Conditional ( if else if )
+Looping Structures ( while do while for loop)
+Array
+
+Program on what we have learntso so far 
+
+-------------------------------------------
+If else :
+-------------------------------------------
+
+package com.cdac;
+public class Conditional {
+
+    public static void main(String[] args) {
+
+   /*     weather = "Sunny" : Play Football
+                = "raining" : enjoy the coffee at home
+                =  "Snowy"      : ice skating
+                = "Sleep"    : default activity
+    */
+        String weather = "";
+        if(weather == "Sunny")
+        {
+            System.out.println("Play Football");
+        }
+        else if (weather == "raining")
+        {
+            System.out.println("enjoy the coffee at home");
+        }
+        else if (weather == "Snowy")
+        {
+            System.out.println("ice skating");
+        }
+        else {
+            System.out.println("Sleep");
+        }
+        System.out.println("Thank you for choosing your activity ");
+
+    }
+}
+
+/* Some tring functions */
+--------------------------------
+str1 = "   Hello World  "
+
+trim(str1) ==> "Hello World"
+rtrim(str1) ==>"   Hello World"
+ltrim(str1) ==>"Hello World  " 
+
+
+
+/* Case example*/
+
+package com.cdac;
+public class Conditional {
+    public static void main(String[] args) {
+
+   /*     weather = "Sunny" : Play Football
+                = "raining" : enjoy the coffee at home
+                =  "Snowy"      : ice skating
+                = "Sleep"    : default activity
+    */
+      String weather = "raining";
+     switch(weather) {
+         case "Sunny":
+             System.out.println("Play Football");
+             break;
+         case "raining":
+             System.out.println("enjoy the coffee at home");
+         case "Snowy":
+             System.out.println("ice skating");
+             break;
+         default :
+             System.out.println("Sleep");
+     }
+        System.out.println("Thank you for choosing your activity ");
+
+    }
+}
+
+
+
